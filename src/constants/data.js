@@ -60,7 +60,13 @@ export const heroSlides = [
     alt: 'Open laptop showing a careers website',
   },
 ];
-export const tickerItems = [];
+export const tickerItems = [
+  { label: 'Our Current Openings', to: '/career' },
+  { label: 'Staffing Solutions', to: '/services#staffing' },
+  { label: 'SAP Services', to: '/services#sap' },
+  { label: 'Embedded Software', to: '/services#embedded' },
+  { label: 'Semiconductor Design', to: '/services#semiconductor' },
+];
 export const services = [];
 export const stats = [];
 export const contact = {};

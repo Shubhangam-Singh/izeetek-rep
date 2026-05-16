@@ -1,1 +1,26 @@
-/* Ticker marquee styles land with the component implementation. */
+/* Seamless marquee: render the list twice and translate by -50% over one loop. */
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: tickerScroll 24s linear infinite;
+}
+
+.track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes tickerScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.separator {
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 700;
+  margin: 0 18px;
+}
