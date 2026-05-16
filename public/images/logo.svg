@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="44" viewBox="0 0 180 44" fill="none" role="img" aria-label="Izeetek">
+  <text
+    x="0"
+    y="30"
+    font-family="Montserrat, sans-serif"
+    font-size="28"
+    font-weight="800"
+    fill="#1E3A5F"
+    letter-spacing="0.5"
+  >Izee<tspan fill="#1a5fa8">tek</tspan></text>
+  <rect x="0" y="36" width="120" height="3" rx="1.5" fill="#f5a623" />
+</svg>
