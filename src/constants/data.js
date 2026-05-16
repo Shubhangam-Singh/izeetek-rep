@@ -138,6 +138,26 @@ We combine deep recruitment expertise with hands-on delivery teams across SAP, e
 systems, semiconductor design and modern software engineering — so you can scale skills,
 shrink hiring costs, and stay focused on what your business does best.`,
 };
-export const quickLinks = [];
-export const usefulLinks = [];
+export const quickLinks = [
+  { label: 'Home', to: '/' },
+  { label: 'About Us', to: '/about-us' },
+  { label: 'Services', to: '/services' },
+  { label: 'Career', to: '/career' },
+  { label: 'Contact Us', to: '/contact-us' },
+];
+
+export const usefulLinks = [
+  { label: 'SAP Services', to: '/services#sap' },
+  { label: 'Embedded Software', to: '/services#embedded' },
+  { label: 'Staffing Solutions', to: '/services#staffing' },
+  { label: 'Semiconductor Design', to: '/services#semiconductor' },
+  { label: 'Software Engineering', to: '/services#software' },
+];
+
+export const partnerBadges = [
+  { label: 'GreytHR' },
+  { label: 'Monster India' },
+  { label: 'Naukri' },
+  { label: 'LinkedIn Talent' },
+];
 export const jobs = [];
