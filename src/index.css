@@ -1,3 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    color: theme('colors.neutral.text');
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: theme('colors.neutral.dark');
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  *:focus-visible {
+    outline: 2px solid theme('colors.brand.accent');
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .section-heading {
+    @apply font-heading text-2xl font-extrabold text-neutral-dark md:text-3xl;
+  }
+
+  .section-heading::after {
+    content: '';
+    display: block;
+    width: 56px;
+    height: 3px;
+    margin-top: 12px;
+    background-color: theme('colors.brand.accent');
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-md bg-brand-accent px-6 py-3 font-heading text-sm font-bold uppercase tracking-wide text-white transition hover:bg-brand-accent-dark hover:scale-[1.03];
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-md bg-brand-navy px-6 py-3 font-heading text-sm font-bold uppercase tracking-wide text-white transition hover:bg-brand-blue;
+  }
+}
