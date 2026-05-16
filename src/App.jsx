@@ -1,10 +1,31 @@
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar.jsx';
+import Footer from './components/Footer/Footer.jsx';
+import WhatsAppFloat from './components/WhatsAppFloat/WhatsAppFloat.jsx';
+import Home from './pages/Home.jsx';
+import AboutUs from './pages/AboutUs.jsx';
+import ServicesPage from './pages/Services.jsx';
+import Career from './pages/Career.jsx';
+import ContactUs from './pages/ContactUs.jsx';
+import useScrollTop from './hooks/useScrollTop.js';
+
 export default function App() {
+  useScrollTop();
+
   return (
-    <main className="min-h-screen flex items-center justify-center bg-slate-50">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold text-slate-800">Izeetek</h1>
-        <p className="mt-2 text-slate-500">React replica scaffolding — Vite + Tailwind ready.</p>
+    <div className="flex min-h-screen flex-col">
+      <Navbar />
+      <div className="flex-1">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/career" element={<Career />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+        </Routes>
       </div>
-    </main>
+      <Footer />
+      <WhatsAppFloat />
+    </div>
   );
 }
