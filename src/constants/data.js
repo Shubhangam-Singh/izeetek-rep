@@ -104,7 +104,18 @@ export const services = [
       'Web, mobile and cloud product development with modern stacks. From discovery and design to CI/CD and observability, we build software that your customers actually love.',
   },
 ];
-export const stats = [];
+export const stats = [
+  { value: '500+', label: 'Happy Clients' },
+  { value: '50+', label: 'Expert Consultants' },
+  { value: '10+', label: 'Years of Experience' },
+];
+
+export const ctaCopy = {
+  eyebrow: 'Why Izeetek',
+  heading: 'Enterprise services that scale with your ambitions',
+  body: 'From day-one staffing support to multi-year engineering programs, our teams plug in fast and stay accountable to outcomes.',
+  cta: { label: 'Contact Us', to: '/contact-us' },
+};
 export const contact = {
   address: {
     line1: '86/80, 4th Floor, SGR Plaza',
