@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Semiconductor Design">
+  <rect x="10" y="10" width="44" height="44" rx="6" fill="#1E3A5F" />
+  <rect x="22" y="22" width="20" height="20" rx="2" fill="#f5a623" />
+  <g stroke="#1a5fa8" stroke-width="2" fill="none">
+    <path d="M22 32 H 12" />
+    <path d="M42 32 H 52" />
+    <path d="M32 22 V 12" />
+    <path d="M32 42 V 52" />
+  </g>
+  <circle cx="32" cy="32" r="3" fill="#ffffff" />
+</svg>

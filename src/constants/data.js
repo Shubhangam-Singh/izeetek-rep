@@ -67,7 +67,43 @@ export const tickerItems = [
   { label: 'Embedded Software', to: '/services#embedded' },
   { label: 'Semiconductor Design', to: '/services#semiconductor' },
 ];
-export const services = [];
+export const services = [
+  {
+    id: 'sap',
+    title: 'SAP Services',
+    icon: '/images/services/sap.svg',
+    description:
+      'End-to-end SAP implementation, S/4HANA migrations and managed support — delivered by certified consultants who understand both the technology and your business processes.',
+  },
+  {
+    id: 'embedded',
+    title: 'Embedded Software',
+    icon: '/images/services/embedded.svg',
+    description:
+      'Firmware, drivers and board bring-up for IoT, automotive and industrial platforms. We work from architecture through validation, with a focus on real-time reliability.',
+  },
+  {
+    id: 'staffing',
+    title: 'Staffing Solutions',
+    icon: '/images/services/staffing.svg',
+    description:
+      'Contract, contract-to-hire and permanent placements across IT and engineering. Our recruiters pre-screen for skill, fit and intent so your interviews stay productive.',
+  },
+  {
+    id: 'semiconductor',
+    title: 'Semiconductor Design',
+    icon: '/images/services/semiconductor.svg',
+    description:
+      'RTL design, verification, physical implementation and DFT support for ASIC and SoC programs. Senior engineers integrated into your team or operating as a delivery pod.',
+  },
+  {
+    id: 'software',
+    title: 'Software Engineering',
+    icon: '/images/services/software.svg',
+    description:
+      'Web, mobile and cloud product development with modern stacks. From discovery and design to CI/CD and observability, we build software that your customers actually love.',
+  },
+];
 export const stats = [];
 export const contact = {
   address: {
