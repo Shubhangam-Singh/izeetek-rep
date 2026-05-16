@@ -55,6 +55,14 @@
   padding: 6px 14px;
   filter: grayscale(60%);
   transition: filter 0.25s ease, background-color 0.25s ease;
+  display: inline-block;
+}
+
+@media (max-width: 640px) {
+  .partnerChip {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
 }
 
 .partnerChip:hover {

@@ -12,6 +12,13 @@
     transform 0.25s ease,
     box-shadow 0.25s ease,
     border-color 0.25s ease;
+  height: 100%;
+}
+
+@media (max-width: 640px) {
+  .card {
+    padding: 28px 22px;
+  }
 }
 
 .card:hover {
