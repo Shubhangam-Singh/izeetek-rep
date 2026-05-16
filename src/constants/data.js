@@ -69,7 +69,28 @@ export const tickerItems = [
 ];
 export const services = [];
 export const stats = [];
-export const contact = {};
+export const contact = {
+  address: {
+    line1: '86/80, 4th Floor, SGR Plaza',
+    line2: 'Old Airport Road, Marathahalli',
+    line3: 'BENGALURU – 560 037',
+  },
+  phones: ['+91 7406272111'],
+  emails: ['info@izeetek.com', 'contact@izeetek.com'],
+  whatsapp: '+917406272111',
+  mapsEmbed:
+    'https://maps.google.com/maps?q=Marathahalli%20Old%20Airport%20Road%20Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed',
+};
+
+export const aboutBlurb = {
+  eyebrow: 'About Us',
+  title: 'A people-first technology partner.',
+  body: `Izeetek is a Bengaluru-based talent and technology partner that helps growing
+companies build high-performing engineering teams and ship complex products on time.
+We combine deep recruitment expertise with hands-on delivery teams across SAP, embedded
+systems, semiconductor design and modern software engineering — so you can scale skills,
+shrink hiring costs, and stay focused on what your business does best.`,
+};
 export const quickLinks = [];
 export const usefulLinks = [];
 export const jobs = [];
