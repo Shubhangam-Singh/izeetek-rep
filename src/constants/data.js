@@ -160,4 +160,47 @@ export const partnerBadges = [
   { label: 'Naukri' },
   { label: 'LinkedIn Talent' },
 ];
-export const jobs = [];
+export const jobs = [
+  {
+    id: 'sap-fico-consultant',
+    title: 'SAP FICO Consultant',
+    location: 'Bengaluru / Hybrid',
+    type: 'Full-time',
+    experience: '5–8 years',
+    summary:
+      'Lead FICO module rollouts and S/4HANA migrations for enterprise clients across BFSI and manufacturing.',
+    requirements: [
+      'Strong hands-on with FI, CO, AA and product costing',
+      'Two or more end-to-end implementations',
+      'Excellent stakeholder communication',
+    ],
+  },
+  {
+    id: 'embedded-firmware-engineer',
+    title: 'Embedded Firmware Engineer',
+    location: 'Bengaluru',
+    type: 'Full-time',
+    experience: '3–6 years',
+    summary:
+      'Build firmware for ARM Cortex-M based IoT and industrial controllers, from drivers up to OTA.',
+    requirements: [
+      'Embedded C, RTOS (FreeRTOS / Zephyr)',
+      'Comfortable with oscilloscopes, logic analyzers, and JTAG',
+      'Bonus: low-power BLE / Wi-Fi stacks',
+    ],
+  },
+  {
+    id: 'technical-recruiter',
+    title: 'Technical Recruiter',
+    location: 'Bengaluru / Remote',
+    type: 'Full-time',
+    experience: '2–5 years',
+    summary:
+      'Own the full hiring lifecycle for niche engineering roles — from sourcing and screening to offer negotiation.',
+    requirements: [
+      'Strong sourcing on LinkedIn, Naukri and GitHub',
+      'Ability to assess technical fit for IT / embedded / semicon roles',
+      'A high-trust, high-empathy approach to candidates',
+    ],
+  },
+];
