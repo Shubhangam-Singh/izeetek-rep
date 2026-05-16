@@ -34,6 +34,13 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-[100] focus:rounded-md focus:bg-brand-accent focus:px-4 focus:py-2 focus:font-heading focus:text-sm focus:font-bold focus:text-white"
+      >
+        Skip to content
+      </a>
+
       {/* Top strip */}
       <div className="bg-brand-navy text-white">
         <div className="mx-auto flex max-w-container items-center justify-end gap-4 px-4 py-2 text-xs">
@@ -59,7 +66,7 @@ export default function Navbar() {
       </div>
 
       {/* Main bar */}
-      <nav className="bg-white shadow-nav">
+      <nav className="bg-white shadow-nav" aria-label="Primary">
         <div className="mx-auto flex max-w-container items-center justify-between px-4 py-3 md:py-4">
           <Link to="/" onClick={closeMobile} className="flex items-center gap-2">
             <img src="/images/logo.svg" alt="Izeetek" className="h-10 w-auto" />
@@ -78,6 +85,7 @@ export default function Navbar() {
                 >
                   <Link
                     to={link.to}
+                    aria-current={isActive(link.to) ? 'page' : undefined}
                     className={`flex items-center gap-1 px-4 py-3 font-heading text-[13px] font-semibold uppercase tracking-wide transition-colors ${
                       isActive(link.to)
                         ? 'bg-brand-navy text-white'
@@ -109,6 +117,7 @@ export default function Navbar() {
                 <li key={link.label}>
                   <Link
                     to={link.to}
+                    aria-current={isActive(link.to) ? 'page' : undefined}
                     className={`block px-4 py-3 font-heading text-[13px] font-semibold uppercase tracking-wide transition-colors ${
                       isActive(link.to)
                         ? 'bg-brand-navy text-white'

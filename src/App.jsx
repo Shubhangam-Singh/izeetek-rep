@@ -7,6 +7,7 @@ import AboutUs from './pages/AboutUs.jsx';
 import ServicesPage from './pages/Services.jsx';
 import Career from './pages/Career.jsx';
 import ContactUs from './pages/ContactUs.jsx';
+import NotFound from './pages/NotFound.jsx';
 import useScrollTop from './hooks/useScrollTop.js';
 
 export default function App() {
@@ -15,15 +16,16 @@ export default function App() {
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
-      <div className="flex-1">
+      <main id="main-content" className="flex-1" tabIndex={-1}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/career" element={<Career />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
-      </div>
+      </main>
       <Footer />
       <WhatsAppFloat />
     </div>
